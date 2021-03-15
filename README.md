@@ -1,4 +1,4 @@
-# Scrape multiple pages a table, and write them into a csv file.
+# Scrape multiple pages, a table, and write them into a csv file.
  First, you have to import a few things so that your code can run correctly. Here's what's needed:
  ```
  from bs4 import BeautifulSoup
