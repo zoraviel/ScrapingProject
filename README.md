@@ -1,4 +1,4 @@
-# Scrape Multiple Pages a Table, and write them into a csv file.
+# Scrape multiple pages a table, and write them into a csv file.
  First, you have to import a few things so that your code can run correctly. Here's what's needed:
  ```
  from bs4 import BeautifulSoup
@@ -55,7 +55,7 @@ for data in rows:
 ```
 csvfile.close
 ```
-## Scraping Multiple Pages using Selenium
+## Scraping multiple pages using Selenium
 Make a variable names driver, and using webdriver.Chrome create a local path to your driver on your computer. Then, get the url of the first page you want to scrape. Use page and soup to get the source, and finally close the driver:
 
 ```
