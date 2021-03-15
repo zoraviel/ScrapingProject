@@ -1,4 +1,4 @@
-#Scrape Multiple Pages a Table, and write them into a csv file.
+# Scrape Multiple Pages a Table, and write them into a csv file.
  First, you have to import a few things so that your code can run correctly. Here's what's needed:
  ```
  from bs4 import BeautifulSoup
@@ -8,7 +8,7 @@
  from selenium import webdriver
 ```
 *Note: you have to have BeautifulSoup, selenium and a driver installed before this code can work*
-##Getting the table data
+## Getting the table data
 Get the specific page that you are looking for by using its url, then requests and soup:
  ```
  url = "https://www.cbpp.org/research/family-income-support/tanf-benefits-still-too-low-to-help-families-especially-black"
@@ -55,7 +55,7 @@ for data in rows:
 ```
 csvfile.close
 ```
-##Scraping Multiple Pages using Selenium
+## Scraping Multiple Pages using Selenium
 Make a variable names driver, and using webdriver.Chrome create a local path to your driver on your computer. Then, get the url of the first page you want to scrape. Use page and soup to get the source, and finally close the driver:
 
 ```
@@ -154,7 +154,7 @@ try:
     except:
         pass
 ```
-use a for loop to get the urls from the previous list, then, close the csv file:
+Use a for loop to get the urls from the previous list, then, close the csv file:
 ```
 for link in link_list:
     get_info(link)
